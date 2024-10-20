@@ -3,40 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
     <title>Operlator</title>
   </head>
   <body>
-    <section class="calculator">
-      <input class="display" readonly></input>
+    <div class="calculator">
+      <h1>&#60; OPERLATOR &#62;</h1>
+      <input class="display" readonly />
       <div class="buttons">
-        <button onclick="clearValue()">C</button>
-        <button onclick="deleteValue()">D</button>
-        <button onclick="displayValue('7')">7</button>
-        <button onclick="displayValue('8')">8</button>
-        <button onclick="displayValue('9')">9</button>
-        <button onclick="displayValue('/')">/</button>
-        <button onclick="displayValue('(')">(</button>
-        <button onclick="displayValue(')')">)</button>
-        <button onclick="displayValue('4')">4</button>
-        <button onclick="displayValue('5')">5</button>
-        <button onclick="displayValue('6')">6</button>
-        <button onclick="displayValue('x')">x</button>
-        <button onclick="displayValue('%')">%</button>
-        <button onclick="displayValue('**')">**</button>
-        <button onclick="displayValue('1')">1</button>
-        <button onclick="displayValue('2')">2</button>
-        <button onclick="displayValue('3')">3</button>
-        <button onclick="displayValue('-')">-</button>
-        <button onclick="displayValue('<')">&#60</button>
-        <button onclick="displayValue('>')">&#62</button>
-        <button onclick="displayValue('=')">=</button>
-        <button onclick="displayValue('0')">0</button>
-        <button onclick="displayValue('.')">.</button>
-        <button onclick="displayValue('+')">+</button>
-        <button onclick="calculateValue()">ENTER</button>
+        <button onclick="clearValue()" class="function">C</button>
+        <button onclick="deleteValue()" class="function">D</button>
+        <button onclick="displayValue('7')" class="number">7</button>
+        <button onclick="displayValue('8')" class="number">8</button>
+        <button onclick="displayValue('9')" class="number">9</button>
+        <button onclick="displayValue('/')" class="function">/</button>
+        <button onclick="displayValue('(')" class="function">&#40;</button>
+        <button onclick="displayValue(')')" class="function">&#41;</button>
+        <button onclick="displayValue('4')" class="number">4</button>
+        <button onclick="displayValue('5')" class="number">5</button>
+        <button onclick="displayValue('6')" class="number">6</button>
+        <button onclick="displayValue('x')" class="function">x</button>
+        <button onclick="displayValue('%')" class="function">
+          % <span>Remainder</span>
+        </button>
+        <button onclick="displayValue('**')" class="function">
+          ** <span>Exponent</span>
+        </button>
+        <button onclick="displayValue('1')" class="number">1</button>
+        <button onclick="displayValue('2')" class="number">2</button>
+        <button onclick="displayValue('3')" class="number">3</button>
+        <button onclick="displayValue('-')" class="function">-</button>
+        <button onclick="displayValue('<')" class="function">&#60;</button>
+        <button onclick="displayValue('>')" class="function">&#62;</button>
+        <button onclick="displayValue('=')" class="function">=</button>
+        <button onclick="displayValue('0')" class="number">0</button>
+        <button onclick="displayValue('.')" class="function">.</button>
+        <button onclick="displayValue('+')" class="function">+</button>
+        <button onclick="calculateValue()" class="enter">ENTER</button>
       </div>
-    </section>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
