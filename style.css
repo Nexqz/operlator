@@ -59,6 +59,7 @@ button {
   border: none;
   border-radius: 0.5rem;
   position: relative;
+  color: var(--black);
 }
 
 button:active {
